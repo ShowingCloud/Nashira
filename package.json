@@ -1,0 +1,31 @@
+{
+  "name": "nashira",
+  "version": "1.0.0",
+  "description": "OpenID Connect Provider for Showing Cloud",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShowingCloud/Nashira.git"
+  },
+  "keywords": [
+    "Node",
+    "OpenID",
+    "Connect",
+    "OP"
+  ],
+  "author": "Showing Cloud",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ShowingCloud/Nashira/issues"
+  },
+  "homepage": "https://github.com/ShowingCloud/Nashira#readme",
+  "dependencies": {
+    "koa-body": "^2.5.0",
+    "koa-ejs": "^4.1.0",
+    "oidc-provider": "^2.9.2"
+  }
+}

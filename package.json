@@ -24,8 +24,25 @@
   },
   "homepage": "https://github.com/ShowingCloud/Nashira#readme",
   "dependencies": {
-    "koa-body": "^2.5.0",
-    "koa-ejs": "^4.1.0",
-    "oidc-provider": "^2.9.2"
+    "ejs": "^2.6.1",
+    "express": "^4.17.0",
+    "oidc-provider": "^2.18.2"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "mongo": true,
+      "node": true
+    },
+    "extends": "airbnb",
+    "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+      "ecmaVersion": 2019,
+      "sourceType": "module"
+    },
+    "rules": {}
   }
 }

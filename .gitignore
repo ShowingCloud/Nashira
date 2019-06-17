@@ -100,5 +100,7 @@ capybara-*html
 .rvmrc.*
 
 # settings and keys
-keystore.json
-settings.js
+config/clients.js
+config/config.js
+config/keystore.json
+config/oidcconfig.js

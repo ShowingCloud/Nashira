@@ -2,10 +2,10 @@
   "name": "nashira",
   "version": "1.0.0",
   "description": "OpenID Connect Provider for Showing Cloud",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -24,9 +24,17 @@
   },
   "homepage": "https://github.com/ShowingCloud/Nashira#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-redis": "^3.4.1",
+    "cookie-parser": "^1.4.4",
     "ejs": "^2.6.1",
-    "express": "^4.17.0",
-    "oidc-provider": "^2.18.2"
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "helmet": "^3.18.0",
+    "ioredis": "^4.10.0",
+    "mongoose": "^5.5.14",
+    "morgan": "^1.9.1",
+    "oidc-provider": "^5.5.5"
   },
   "eslintConfig": {
     "env": {

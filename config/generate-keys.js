@@ -36,7 +36,7 @@ Promise.all([
   keystore.generate('EC', 'P-521', {
     kid: 'enc-ec5-0',
     use: 'enc',
-  })
+  }),
 ]).then(() => {
   fs.writeFileSync(path.resolve('keystore.json'), JSON.stringify(keystore.toJSON(true), null, 2));
 });

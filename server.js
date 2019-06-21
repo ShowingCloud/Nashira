@@ -36,9 +36,9 @@ app.use(Session({
   saveUninitialized: false,
   secret: [config.sessionSecret, ...config.otherSessionSecrets],
   store: new RedisStore({
-    url: config.sessionStorageURL,
+    url: config.redisStorageURL,
     logErrors: true,
-    prefix: 'Nashira-Session:',
+    prefix: config.redisSessionPrefix,
   }),
 }));
 
@@ -68,7 +68,7 @@ let server;
   await provider.initialize({
     adapter: RedisAdapter,
     clients,
-    keystore: keystore,
+    keystore,
   });
 
   provider.defaultHttpOptions = { timeout: 15000 };
@@ -77,10 +77,10 @@ let server;
   oidcRoutes(app, provider);
   app.use('/oidc', provider.callback);
   server = app.listen(config.port, () => {
-    console.log(`application is listening on port ${config.port}, check its /.well-known/openid-configuration`);
+    console.log(`application is listening on port ${config.port}, check its /.well-known/openid-configuration`); // eslint-disable-line no-console
   });
 })().catch((err) => {
   if (server && server.listening) server.close();
-  console.error(err);
+  console.error(err); // eslint-disable-line no-console
   process.exitCode = 1;
 });

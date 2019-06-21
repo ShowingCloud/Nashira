@@ -3,8 +3,8 @@ const Redis = require('ioredis');
 const config = require('../config/config');
 
 
-const client = new Redis(config.sessionStorageURL, {
-  keyPrefix: 'oidc:',
+const client = new Redis(config.redisStorageURL, {
+  keyPrefix: config.redisOidcPrefix,
 });
 
 const grantable = new Set([

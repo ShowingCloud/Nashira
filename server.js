@@ -10,7 +10,7 @@ const {
   oidcConfig,
   clients,
   keystore,
-} = require('./config/index');
+} = require('./config');
 
 const RedisAdapter = require('./models/redisAdapter');
 require('./models/mongodb');

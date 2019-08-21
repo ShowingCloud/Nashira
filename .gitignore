@@ -104,3 +104,5 @@ config/clients.js
 config/config.js
 config/keystore.json
 config/oidcconfig.js
+
+newrelic.js

@@ -1,3 +1,5 @@
+require('newrelic');
+
 const Provider = require('oidc-provider');
 const Express = require('express');
 const Session = require('express-session');

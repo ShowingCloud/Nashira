@@ -35,7 +35,7 @@
     "mongoose": "^8.9.5",
     "morgan": "^1.9.1",
     "newrelic": "^11.23.2",
-    "oidc-provider": "^8.4.5"
+    "oidc-provider": "^9.4.0"
   },
   "eslintConfig": {
     "env": {

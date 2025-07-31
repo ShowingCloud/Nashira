@@ -29,11 +29,11 @@
     "cookie-parser": "^1.4.7",
     "ejs": "^3.1.10",
     "express": "^4.21.2",
-    "express-session": "^1.18.1",
+    "express-session": "^1.18.2",
     "helmet": "^3.23.3",
     "ioredis": "^4.14.0",
     "mongoose": "^8.9.5",
-    "morgan": "^1.9.1",
+    "morgan": "^1.10.1",
     "newrelic": "^11.23.2",
     "oidc-provider": "^8.4.5"
   },
